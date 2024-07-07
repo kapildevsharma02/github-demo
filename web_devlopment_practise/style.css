@@ -19,3 +19,14 @@
     text-align: center;
     /* text-align: left; */
 }
+
+.container-three{
+    width:200px;
+    height:200px;
+    background-color: pink;
+    border:2px solid black;
+    margin:5px;
+    padding:10px;
+    text-align: center;
+    /* text-align: left; */
+}
