@@ -20,4 +20,3 @@ p1.then((value)=>{
 p1.then(()=>{
    console.log("Congratulations this promise is now resolved")
 })
-// this is the work and 
