@@ -12,7 +12,8 @@ let p1=new Promise((resolve,reject)=>{
 let p2=new Promise((resolve,reject)=>{
     setTimeout(()=>{
         // console.log("Value 2")
-        reject(new Error("This is the error in Promise 2"))
+        resolve("Value 2")
+        // reject(new Error("This is the error in Promise 2"))
     },2000)
 })
 
@@ -35,8 +36,13 @@ let p3=new Promise((resolve,reject)=>{
 //     console.log(value)
 // })
 
-let promise_all=Promise.allSettled([p1,p2,p3])
+// let promise_all=Promise.allSettled([p1,p2,p3])
+// promise_all.then((value)=>{
+//     console.log(value)
+// })
+
+let promise_all=Promise.race([p1,p2,p3])
 promise_all.then((value)=>{
-    console.log(value)
+    console.log(value);
 })
 
