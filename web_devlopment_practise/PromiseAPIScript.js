@@ -21,15 +21,20 @@ let p3=new Promise((resolve,reject)=>{
     },3000)
 })
 
-p1.then((value)=>{
-    console.log(value)
-})
+// p1.then((value)=>{
+//     console.log(value)
+// })
 
-p2.then((value)=>{
-    console.log(value)
-})
+// p2.then((value)=>{
+//     console.log(value)
+// })
 
-p3.then((value)=>{
+// p3.then((value)=>{
+//     console.log(value)
+// })
+
+let promise_all=Promise.all([p1,p2,p3])
+promise_all.then((value)=>{
     console.log(value)
 })
 
