@@ -9,6 +9,11 @@
     /* text-align: left; */
 }
 
+.container{
+    display: flex;
+}
+
+
 .container-two{
     width:200px;
     height:200px;
