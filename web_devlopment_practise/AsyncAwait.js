@@ -35,4 +35,3 @@ a.then((value)=>{console.log(value)})
 
 const s=sum(2,3);
 console.log("The sum is "+s);
-//this is yashchecking github commit
