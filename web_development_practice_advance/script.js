@@ -3,10 +3,13 @@ setTimeout(()=>{
 },1000)
 
 try{
-    console.log(rahul)
+    setTimeout(()=>{
+        console.log(rahul)
+},100)
 }
-catch(error){
-    console.log("Balle Balle!!")
+
+catch(err){
+    console.log("The error is "+err)
 }
 
 setTimeout(()=>{
