@@ -1,8 +1,9 @@
 let p=fetch("https://goweather.herokuapp.com/weather/chennai")
-p.then((value1)=>{
-    console.log("The status is "+value1.status)
-    console.log("The ok is "+value1.ok)
-    return value1.json();
+p.then((response)=>{
+    console.log("The status is "+response.status)
+    console.log("The ok is "+response.ok)
+    console.log("Try to add response.text "+response.text())
+    return response.json();
 }).then((value2)=>{
     console.log(value2)
 })  
