@@ -15,9 +15,15 @@ const createTodo=async()=>{
     return response;
 }
 
+const getTodo=async (id)=>{
+    let response=await fetch('https://jsonplaceholder.typicode.com/posts/'+id)
+    let r=await response.json();
+    return r;
+}
 const mainFun=async ()=>{
     let todo=await createTodo()
     console.log(todo)
+    console.log(await getTodo(1045))
 }
 
-mainFun();      
+mainFun();
