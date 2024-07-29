@@ -23,7 +23,7 @@ const getTodo=async (id)=>{
 const mainFun=async ()=>{
     let todo=await createTodo()
     console.log(todo)
-    console.log(await getTodo(1045))
+    console.log(await getTodo(5))
 }
 
 mainFun();
